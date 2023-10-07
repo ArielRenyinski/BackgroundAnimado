@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background_movimiento</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .animated-background{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(
+                to right, rgb(255, 132, 0),
+                rgb(55, 0, 163), #04dc28);
+            background-size: 400% 400%;
+            animation: animated-background 10s infinite ease-in-out;
+        }
+        @keyframes animated-background{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position:  0 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-background">
+    </div>
+</body>
+</html>
